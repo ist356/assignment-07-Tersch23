@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Dynamically add the project_code directory to sys.path
+sys.path.append(os.path.join(os.path.dirname(__file__), 'project_code'))
+
 import re
 from playwright.sync_api import Playwright, sync_playwright
 from menuitemextractor import extract_menu_item
@@ -8,7 +14,7 @@ def tullyscraper(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto("https://www.tullysgoodtimes.com/menus/")
+    page.goto("https://web.archive.org/web/20241111165815/https://www.tullysgoodtimes.com/menus/")
 
     extracted_items = []
     for title in page.query_selector_all("h3.foodmenu__menu-section-title"):

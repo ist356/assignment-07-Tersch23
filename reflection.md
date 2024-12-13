@@ -23,3 +23,11 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+What did you learn?
+- I learned how to scrape a tullys menu and create functions in this assignment. In this assignment I did scraping which was new to me so I learned how to take a file and then scrape it and save it into the cache folder.
+What confuses you?
+- The cache still confuses me, i am not sure why saving it to there is right or what the difference is there to other spots. It makes me confused because i frequently run into errors with the cache. 
+Where did you struggle?
+-  I had to change the name of the 'code' file to 'project_code' because I was runnning into some issues with the name of the file. This was a struggle because again i look at the solutions and i copy the code but for some reason not everything works for me.
+Where might you need more practice?
+- I need more practice getting my tests to pass, when I run into errors I dont know what to do and what the next steps are for completing it. 
