@@ -1,9 +1,3 @@
-import sys
-import os
-
-# Dynamically add the project_code directory to sys.path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'project_code'))
-
 if __name__ == "__main__":
     import sys
     sys.path.append('code')
@@ -35,6 +29,8 @@ def clean_scraped_text(scraped_text: str) -> list[str]:
 
     return cleaned
 
+
+
 def extract_menu_item(title:str, scraped_text: str) -> MenuItem:
     cleaned_items = clean_scraped_text(scraped_text)
     item = MenuItem(category=title, name="", price=0.0, description="")
@@ -45,6 +41,7 @@ def extract_menu_item(title:str, scraped_text: str) -> MenuItem:
     else:
         item.description = "No description available."
     return item
+
 
 
 

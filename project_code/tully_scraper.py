@@ -1,9 +1,3 @@
-import sys
-import os
-
-# Dynamically add the project_code directory to sys.path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'project_code'))
-
 import re
 from playwright.sync_api import Playwright, sync_playwright
 from menuitemextractor import extract_menu_item
